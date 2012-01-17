@@ -1,0 +1,7 @@
+
+  <label class="label"><%= t("activerecord.attributes.task.title", :default => t("activerecord.labels.title", :default => "Title")) %>:</label>
+  <p><%= @task.title %></p>
+
+  <label class="label"><%= t("activerecord.attributes.task.done", :default => t("activerecord.labels.done", :default => "Done")) %>:</label>
+  <p><%= @task.done %></p>
+<%= link_to "Back", tasks_path  %>

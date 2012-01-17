@@ -1,0 +1,10 @@
+
+    <%= f.label :title, t("activerecord.attributes.task.title", :default => "Title"), :class => :label %>
+    <%= f.text_field :title, :class => 'text_field' %>
+
+    <%= f.label :done, t("activerecord.attributes.task.done", :default => "Done"), :class => :label %>
+    <%= f.check_box :done, :class => 'check_box' %>
+<div class="actions">
+  <button class="btn primary" type="submit">Save</button> or
+	<%= link_to "Cancel", tasks_path %>
+</div>
